@@ -6,7 +6,7 @@ name: HiFINI-Auto-CheckIn
 on:
   workflow_dispatch:
   schedule:
-    - cron: "59 15 * * *" # 北京时间23:59
+    - cron: "50 15 * * *" # 北京时间23:50
 
 jobs:
   build:
