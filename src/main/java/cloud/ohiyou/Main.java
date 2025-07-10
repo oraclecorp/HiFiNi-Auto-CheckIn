@@ -143,7 +143,7 @@ public class Main {
                 .build();
         // 发送签到请求
         Request request = new Request.Builder()
-                .url("https://www.hifini.net/sg_sign.htm")
+                .url("https://www.hifiti.com/sg_sign.htm")
                 .post(formBody)
                 .addHeader("Cookie", cookie)
                 .addHeader("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36")
