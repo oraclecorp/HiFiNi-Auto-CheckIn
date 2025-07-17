@@ -190,13 +190,8 @@ public class Main {
         }
 
         // 使用正则表达式匹配sign变量的值
-<<<<<<< HEAD
         //Pattern pattern = Pattern.compile("var sign = \"([^\"]+)\"");
         Pattern pattern = Pattern.compile("var sign = \'([^\']+)\'");
-=======
-        //Pattern pattern = Pattern.compile("var s1 = \"([^\"]+)\"");
-        Pattern pattern = Pattern.compile("var s1 = \'([^\']+)\"");
->>>>>>> fdb8d99ff343ebba6c320ac8895acb65a6a632d3
         Matcher matcher = pattern.matcher(signPageCode);
 
         if (matcher.find()) {
