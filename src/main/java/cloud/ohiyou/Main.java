@@ -190,7 +190,7 @@ public class Main {
         }
 
         // 使用正则表达式匹配sign变量的值
-        Pattern pattern = Pattern.compile("var sign = \"([^\"]+)\"");
+        Pattern pattern = Pattern.compile("var s1 = \"([^\"]+)\"");
         Matcher matcher = pattern.matcher(signPageCode);
 
         if (matcher.find()) {
