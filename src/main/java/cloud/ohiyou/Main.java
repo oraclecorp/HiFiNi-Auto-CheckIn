@@ -223,7 +223,7 @@ public class Main {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        throw new RuntimeException("未能获取sign,请检查cookie是否失效" + cookie);
+        throw new RuntimeException("未能获取sign,请检查cookie是否失效" );
     }
 
     /**
@@ -256,7 +256,8 @@ public class Main {
         if (bbsSid != null && bbsToken != null) {
             log("成功解析第 " + (index + 1) + " 个cookie");
             // 拼接bbs_sid和bbs_token并返回
-            return bbsSid + ";" + bbsToken + ";";
+            log("第 " +  (index + 1) + " cookie= " + bbsSid + ";" + bbsToken + ";");
+	    return bbsSid + ";" + bbsToken + ";";
         } else {
             log("解析第 " + (index + 1) + " 个cookie失败");
             return null; // 或者根据需要抛出异常
