@@ -199,7 +199,7 @@ public class Main {
             System.out.println("Sign的值是: " + signValue);
             return signValue;
         } else {
-            throw new RuntimeException("未能获取sign,请检查cookie是否失效");
+            throw new RuntimeException("未能获取sign0,请检查cookie是否失效");
         }
     }
 
@@ -223,7 +223,7 @@ public class Main {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        throw new RuntimeException("未能获取sign,请检查cookie是否失效" );
+        throw new RuntimeException("未能获取sign1,请检查cookie是否失效" );
     }
 
     /**
