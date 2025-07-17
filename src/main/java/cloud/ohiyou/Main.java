@@ -223,7 +223,7 @@ public class Main {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        throw new RuntimeException("未能获取sign,请检查cookie是否失效");
+        throw new RuntimeException("未能获取sign,请检查cookie是否失效" + cookie);
     }
 
     /**
